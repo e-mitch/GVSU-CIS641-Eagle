@@ -12,7 +12,7 @@ locations, but still allowing them to categorize text for later reference.
 # Functional Requirements  
 
 1. Diary Entry Browsing Pane
-1. When the application creates a new diary entry, the entry’s date and time will appear in the left panel of the application.
+   1. When the application creates a new diary entry, the entry’s date and time will appear in the left panel of the application.
 2. Tagging Text
    1. When the user highlights text in the entry they are writing, the tag selection menu shall appear.
    2. If the user selects ‘New Tag’ from the tag selection dropdown, a box and button shall appear, allowing the user to create a new tag.
