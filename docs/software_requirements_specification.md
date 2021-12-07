@@ -11,20 +11,76 @@ locations, but still allowing them to categorize text for later reference.
 
 # Functional Requirements  
 
-1. Diary Entry Browsing Pane
-   1. When the application creates a new diary entry, the entry’s date and time will appear in the left panel of the application.
-2. Tagging Text
-   1. When the user highlights text in the entry they are writing, the tag selection menu shall appear.
-   2. If the user selects ‘New Tag’ from the tag selection dropdown, a box and button shall appear, allowing the user to create a new tag.
-3. Creating a diary entry
-   1. When the user clicks ‘New Entry’, a text area shall appear, taking up the center space of the application.  
+1. Database
+    1. The database shall contain a table containing all tags.  
+    2. The database shall contain a table for each tag.  
+    3. The database shall contain a table holding all entries.  
+    4. The entries table shall also store the date and time of each entry.  
+    5. The entries and tags table shall already exist in the database when the application is downloaded.
+
+2. Application Appearance
+    1. The application shall contain a blank text area for writing entries.  
+    2. The application shall have a “save” button below the entry area.  
+    3. The application shall contain a sidebar displaying all existing tags.  
+    4. The application shall contain a sidebar displaying all existing entries.  
+    5. The application shall show the date and time of save above each tagged text segment.
+
+3. Style
+    1. The application’s colors shall clearly distinguish functional areas.  
+    2. The application shall use no more than two fonts. 
+    3. Each area of the application shall appropriately use padding to avoid visual clutter.  
+    4. The color palette of the application shall use varied colors but not be bright or gaudy.  
+    5. The buttons shall change style when hovered over in order to indicate that they are clickable.  
     
-# Non-Functional Requirements
-1. Application user interface
-   1. Users shall be able to understand without having to interact with the application first how to create a new entry.
-2. Deleting entries
-   1. To avoid accidental deletion of entries, users shall not be able to delete entries without having to confirm.
-3. Tagging text
-   1. Users shall be able to visually tell apart text that belongs to different tags.
-4. Software design
-   1. The code in the application shall adhere to the Model-View-Controller software design pattern.
+4. Response to User Interactions
+    1. When the user highlights typed text in the entry area, a dropdown shall appear to create a tag or select an existing one.  
+    2. When the user clicks “new tag”, a text field and "save" button shall appear.  
+    3. When the user clicks on an entry in the entry sidebar, the application screen shall show the entry.  
+    4. When the user clicks on a tag in the tag sidebar, the application screen shall show all text given that tag.  
+    5. When the user clicks “Edit” next to a tag name, a popup shall appear in which they can type a new tag name.
+    
+5. Application Capabilities
+    1. The application shall show entries in order of creation.  
+    2. The application shall allow users to filter entries by year and/or month.  
+    3. The application shall show tags in order of creation.  
+    4. The application shall allow users to order tags by alphabetical order, order created, and order updated.  
+    5. The application shall not submit a database query if the user is making a query that would throw an exception.
+
+
+    
+# Non-Functional Requirements  
+
+1. Usability
+    1. The user shall be able to understand how to create a new entry by viewing the opening screen of the application.
+    2. The application shall provide feedback to the user when needed.
+    3. The user shall be able to easily understand how to view entries by viewing the opening screen of the application.
+    4. The user shall be able to easily understand how to view tagged text by viewing the opening screen of the application.
+    5. The user shall be able to directly get to any main function of the application with no more than two clicks.   
+    
+2. Maintainability
+    1. The application shall be distributed from Github, allowing the distributor to create changes.
+    2. The database structure shall be generic enough to support changes in the application.
+    3. The application shall be developed in Java.
+    4. Deployment of a new version of the application shall be almost instantaneous.
+    5. The code shall be well-commented to allow for easy maintenance.  
+    
+3. Performance
+    1. The user shall be able to instantaneously retrieve entries from the database.
+    2. Existing tags and entries shall show when the application launches, with no delay.
+    3. The database shall save edited tag names with no apparent delay.
+    4. The database shall delete tags with no apparent delay.
+    5. When a new tag or entry is created, it shall be displayed instantaneously.  
+    
+4. Scalability
+    1. Code for data processing and sorting shall be efficient to ensure speed.
+    2. All data shall be shown in the application regardless of quantity.
+    3. All data shall be stored locally, avoiding the need for any server scaling.
+    4. Where necessary, the application shall add features to ease navigation of abundant data.
+    5. The application shall be distributed online for free to allow as many downloads as needed.  
+    
+5. Code Standards
+    1. The code shall run without throwing errors.
+    2. The code shall be properly spaced and indented.
+    3. Where possible, functions shall be overloaded rather than new named functions being created.
+    4. Function names shall indicate their purpose.
+    5. Variable names shall indicate their purpose.
