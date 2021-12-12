@@ -87,3 +87,26 @@ text for later reference.
     3. Where possible, functions shall be overloaded rather than new named functions being created.
     4. Function names shall indicate their purpose.
     5. Variable names shall indicate their purpose.
+
+
+
+
+## Use Case Diagram Traceability
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| UC1 | Edit Tagged Text | FR4.6 |
+| UC2 | Adding a Tag | FR4.2 |
+| UC3 | Creating an Entry | FR1.6 |
+| UC4 | Deleting an Entry| FR1.6 |
+
+## Class Diagram Traceability
+| Artifact Name | Requirement ID |
+| :-------------: |:----------: |
+| Journal | FR1-5 |
+
+## Activity Diagram Traceability
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| [AD 1](https://github.com/e-mitch/GVSU-CIS641-Eagle/blob/master/artifacts/functional-models/AD%201.png) | Editing an Entry | FR1.6 |
+| [AD 2](https://github.com/e-mitch/GVSU-CIS641-Eagle/blob/master/artifacts/functional-models/AD%202.png) | Deleting Tagged Text | FR4.6 |
+| [AD 3](https://github.com/e-mitch/GVSU-CIS641-Eagle/blob/master/artifacts/functional-models/AD%203.png) | Deleting a Tag | FR1.7|
