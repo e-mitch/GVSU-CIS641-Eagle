@@ -18,6 +18,8 @@ text for later reference.
     3. The database shall contain a table holding all entries.  
     4. The entries table shall also store the date and time of each entry.  
     5. The entries and tags table shall already exist in the database when the application is downloaded.
+    6. Entries can be created, edited, retrieved, and deleted.
+    7. Tags can be created, edited, and deleted.
 
 2. Application Appearance
     1. The application shall contain a blank text area for writing entries.  
@@ -39,6 +41,7 @@ text for later reference.
     3. When the user clicks on an entry in the entry sidebar, the application screen shall show the entry.  
     4. When the user clicks on a tag in the tag sidebar, the application screen shall show all text given that tag.  
     5. When the user clicks “Edit” next to a tag name, a popup shall appear in which they can type a new tag name.
+    6. When the user views all text given a tag, functional edit and delete buttons shall be shown next to each portion of tagged text.
 
 5. Application Capabilities
     1. The application shall show entries in order of creation.  
