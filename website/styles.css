@@ -26,6 +26,8 @@ h2{
 nav{
   text-align:right;
   margin-right:10px;
+  width:800px;
+  line-height: 2em;
 }
 
 nav a{
