@@ -127,50 +127,36 @@ each requirement has a unique ID.
 
 # Change Management Plan
 
-This section describes how to implement Commentarius, why it is useful, and
-how to address issues with implementation and transitioning into usage.  
+This section describes how to implement Commentarius, why it is useful, and how to address issues with implementation and transitioning 
+into usage.  
 
 ## Why do we need Commentarius?
-Typically, when we take notes on something or write down our thoughts, we  
-may use something like a journal, Google docs, Microsoft Word, or something
-similar. While these options are convenient, they don’t necessarily make it
-easy to reference the things we’ve written later. Sure, we can flip through
-pages of diary entries to find a specific detail, or use the Control-F   
-keyboard shortcut to browse a document on a computer. But these methods are
-inefficient, and require us to remember what we’re looking for, and for   
-that we have to remember that we’re looking for something in the first   
+Typically, when we take notes on something or write down our thoughts, we may use something like a journal, Google docs, Microsoft Word,  
+or something similar. While these options are convenient, they don’t necessarily make it easy to reference the things we’ve written later. Sure,  
+we can flip through pages of diary entries to find a specific detail, or use the Control-F  keyboard shortcut to browse a document on a computer.  
+But these methods are inefficient, and require us to remember exactly what we’re looking for, and that we’re looking for something in the first   
 place.  
 
-How many times have you gone into a one-on-one with your manager and   
-forgotten to ask a question because you jotted it down in some Google doc  
-and forgot it was there? How many times have you tried to find notes you   
-took on how to do your work more efficiently, or find some breakthrough you
-had? Wouldn’t it be best if things like this were all kept in the same   
-place?   
+How many times have you gone into a one-on-one with your manager and  forgotten to ask a question because you jotted it down in some Google  
+Doc and forgot it was there? How many times have you tried to find notes you  took on how to do your work more efficiently, or find some breakthrough  
+you had and been unable to find them? Wouldn’t it be best if things like this were all kept in the same place?   
 
-Implementing Commentarius will allow us to keep track of our thoughts,   
-regardless of when we recorded them, and easily create and reference   
-categories of information. This will help us stay organized, remember the  
-things that are important, and keep important information in a centralized 
+Implementing Commentarius will allow us to keep track of our thoughts, regardless of when we recorded them, and easily create and reference   
+categories of information. This will help us stay organized, remember the things that are important, and keep important information in a centralized 
 location.   
 
 ## Implementation
 ### Step 1: Announcing the Change  
-The implementation of Commentarius will start by letting the people working
-for the company know that the software is coming and will be expected to be
-used. This announcement will include explaining why Commentarius will be   
-useful to its users as well as describing for what it can be used.  
+The implementation of Commentarius will start by letting the people working for the company know that the software is coming and will be expected to be
+used. This announcement will include explaining why Commentarius will be  useful to its users as well as describing for what it can be used.  
 
 ### Step 2: Distribution  
-The following day, users shall receive an email detailing the steps of how 
-to download the software. Reminder emails will be sent one and two weeks   
+The following day, users shall receive an email detailing the steps of how to download the software. Reminder emails will be sent one and two weeks   
 after this.  
 
 ### Step 3: Training  
-There will be two methods of training: in-person and virtual. For in-person
-training, an IT employee who is proficient at using the program shall   
-demonstrate, using a computer connected to a projector, the following major
-features of the program:
+There will be two methods of training: in-person and virtual. For in-person training, an IT employee who is proficient at using the program shall  demonstrate,  
+using a computer connected to a projector, the following major features of the program:
 * Creating, reading, editing, and deleting entries
 * Creating, reading, editing, and deleting tags
 * Creating, reading, editing, and deleting tagged text
@@ -178,51 +164,31 @@ features of the program:
 * Filtering entries
 * Sorting tags  
 
-After the demonstration, all present will be invited to experiment with the
-program and ask questions as needed.
-Virtual training will be executed via a virtual meeting in which the same  
-instructor will give the same presentation. This will also be recorded and 
-shared within the company so that anyone who missed training will be able  
-to catch up. After the presentation, users will be invited to experiment   
-with the program and ask questions. Commentarius is designed to be quite   
-intuitive to use, so not many training issues are anticipated.
+After the demonstration, all present will be invited to experiment with the program and ask questions as needed. Virtual training will be executed via a virtual  
+meeting in which the same instructor will give the same presentation. This will also be recorded and shared within the company so that anyone who missed  
+training will be able to catch up. After the presentation, users will be invited to experiment  with the program and ask questions. Commentarius is designed to be 
+quite intuitive to use, so not many training issues are anticipated.
 
 ## Integration  
-Since JavaFX applications are compatible with Windows and Mac, I don’t   
-expect any integration issues for average computer users. The current   
-version of the application will not work on Linux, so users on Linux   
-machines will have to use another computer, or else access a virtual   
-machine using a Microsoft operating system. According to data, not quite 2%
-of personal computer users are using Linux, so Linux compatibility is not 
-expected to be a significant problem.
+Since JavaFX applications are compatible with Windows and Mac, I don’t expect any integration issues for average computer users. The current version of the  
+application will not work on Linux, so users on Linux  machines will have to use another computer, or else access a virtual  machine using a Microsoft operating system.  
+According to data, not quite 2% of personal computer users are using Linux, so Linux compatibility is not expected to be a significant problem.
 
 ## Bug Detection
-Contact information shall be provided for the creator of the application.  
-When users experience unexpected bugs or glitches in the program that   
-cannot be reasonably attributed to user error or lack of understanding,   
-they will be instructed to contact the creators, describing as thoroughly  
-as possible what led up to the issue and what happened.
+Contact information shall be provided for the creator of the application.  When users experience unexpected bugs or glitches in the program that  cannot be reasonably  
+attributed to user error or lack of understanding, they will be instructed to contact the creators, describing as thoroughly as possible what led up to the issue and what happened.
 
-The creator will use this feedback to search for the cause of the problem, 
-fix the bug if one exists, and release a new version of the program without
-the previous issue.
+The creator will use this feedback to search for the cause of the problem, fix the bug if one exists, and release a new version of the program without the previous issue.
 
 ## Feedback
-After the application is implemented, an email shall be sent out allowing 
-users to anonymously give an approval rating of the program and describe   
-any major complaints or why they may or may not like it. Users will be   
-asked to report approximately how many times a day they use the application.  
-They will also be asked to describe why the program should be used. If this
-demonstrates a lack of understanding of why the program is useful, a   
-virtual meeting shall be held to review the functions of the program and a 
+After the application is implemented, an email shall be sent out allowing  users to anonymously give an approval rating of the program and describe  any major complaints  
+or why they may or may not like it. Users will be  asked to report approximately how many times a day they use the application. They will also be asked to describe why the  
+program should be used. If this demonstrates a lack of understanding of why the program is useful, a  virtual meeting shall be held to review the functions of the program and a 
 new feedback email shall be sent out. 
 
 ## Managing Resistance
-As always, it’s expected that some people will be reluctant to start using 
-the new application. While usage isn’t mandatory, emails reminding   
-employees of the functionality of the program or user success stories shall
-be sent out based on the reported frequency of use of the application   
-(lower usage = more emails).
+As always, it’s expected that some people will be reluctant to start using the new application. While usage isn’t mandatory, emails reminding  employees of the functionality of  
+the program or user success stories shall be sent out based on the reported frequency of use of the application  (lower usage = more emails).
 
 # Traceability Links
 This section shows how all created artifacts link to requirements.  
