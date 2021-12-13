@@ -270,3 +270,4 @@ This section contains links to all created software artifacts for this project.
 * [Wireframes](https://github.com/e-mitch/GVSU-CIS641-Eagle/blob/master/artifacts/Commentarius%20Wireframes.png)
 * [Midterm Software Requirements Specification](https://github.com/e-mitch/GVSU-CIS641-Eagle/blob/master/docs/software_requirements_specification.md)
 * [Midterm Presentation](https://github.com/e-mitch/GVSU-CIS641-Eagle/blob/master/docs/Status%20report.pdf)
+* [Project README](https://github.com/e-mitch/GVSU-CIS641-Eagle/blob/master/README.md)
