@@ -69,8 +69,7 @@ each requirement has a unique ID.
 | FR24 | The application shall show entries in order of creation.   |
 | FR25 | The application shall allow users to filter entries by year and/or month.   |
 | FR26 | The application shall show tags in order of creation.   |
-| FR27 | The application shall allow users to order tags by alphabetical order, order created, and order updated.  
-|
+| FR27 | The application shall allow users to order tags by alphabetical order, order created, and order updated.|
 | FR28 | The application shall not submit a database query if the user is making a query that would throw an exception. |
 
 
@@ -80,23 +79,17 @@ each requirement has a unique ID.
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | The user shall be able to understand how to create a new entry by viewing the opening screen of the application.
-|
-| NFR2 | The application shall provide feedback to the user when needed.
-|
-| NFR3 | The user shall be able to easily understand how to view entries by viewing the opening screen of the application.
-|
-| NFR4 | The user shall be able to easily understand how to view tagged text by viewing the opening screen of the application.
-|
-| NFR5 | The user shall be able to directly get to any main function of the application with no more than two clicks.   
-|
+| NFR1 | The user shall be able to understand how to create a new entry by viewing the opening screen of the application.|
+| NFR2 | The application shall provide feedback to the user when needed.|
+| NFR3 | The user shall be able to easily understand how to view entries by viewing the opening screen of the application.|
+| NFR4 | The user shall be able to easily understand how to view tagged text by viewing the opening screen of the application.|
+| NFR5 | The user shall be able to directly get to any main function of the application with no more than two clicks. |
 
 ### Maintainability
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR6 | The application shall be distributed from Github, allowing the distributor to create changes.
-|
+| NFR6 | The application shall be distributed from Github, allowing the distributor to create changes.|
 | NFR7 | The database structure shall be generic enough to support changes in the application. |
 | NFR8 | The application shall be developed in Java. |
 | NFR9 | Deployment of a new version of the application shall be almost instantaneous. |
