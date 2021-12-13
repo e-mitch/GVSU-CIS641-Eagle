@@ -1,0 +1,290 @@
+@font-face {
+    src: url('HindMadurai.ttf');
+}
+@font-face {
+    src: url('NunitoSans.ttf');
+}
+@font-face {
+    src: url('Cabin.ttf');
+}
+@font-face {
+    src: url('LinotypeCentennial.ttf');
+}
+@font-face {
+    src: url('Univers.ttf');
+}
+
+#headerHBox {
+    -fx-font-family: 'Univers-Light-Normal';
+}
+
+#entryVBox. #tagBox{
+    -fx-background-color: #395B50;
+    -min-height:400;
+}
+
+#entryVBox Button, #tagBox Button{
+    -fx-text-fill: #FFF1D0;
+    -fx-background-color: transparent;
+    -fx-font-family: 'Centennial LT 45 Light';
+    -fx-font-size: 1em;
+}
+
+#tagBox Button{
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-font-size: 1.03em;
+}
+#entryVBox Button:hover, #tagBox Button:hover{
+    -fx-background-color: #607b72;
+}
+
+#newEntry {
+    -fx-text-fill: #FFF9A5;
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-font-size: 1.3em;
+    -fx-background-radius:0.4em;
+    -fx-background-color: transparent;
+}
+
+#newEntry:hover {
+    -fx-background-color: #4c3441;
+}
+
+#headerHBox{
+    -fx-background-color: #2E1F27;
+}
+
+#centerMain{
+    -fx-background-color: #2E1F27;
+}
+
+#yearFilterCombo, #monthFilterCombo, #orderTagCombo{
+    -fx-min-width: 240px;
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-background-color: #A6C5BC;
+}
+
+#monthFilterCombo{
+    -fx-padding:4px;
+    -fx-border-insets: 5px 0px 5px 0px;
+    -fx-background-insets: 5px 0px 5px 0px;
+}
+
+#yearFilterCombo .list-cell, #orderTagCombo .list-cell{
+    -fx-text-fill: #2E1F27;
+}
+
+#yearFilterCombo .list-view .list-cell, #monthFilterCombo .list-view .list-cell, #orderTagCombo .list-view .list-cell {
+    -fx-background-color: #2E1F27;
+    -fx-text-fill: #A6C5BC;
+}
+
+#yearFilterCombo .list-view .list-cell:hover, #monthFilterCombo .list-view .list-cell:hover, #orderTagCombo .list-view .list-cell:hover{
+    -fx-background-color: #42353c;
+}
+
+#entryDate {
+    -fx-text-fill: #FFE1D9;
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-font-size: 1em;
+}
+
+#entryArea .content{
+    -fx-background-color: #fffde4;
+    -fx-text-fill: #2E1F27;
+}
+
+#entryArea {
+    -fx-font-family: 'Centennial LT 45 Light';
+}
+
+#readArea{
+    -fx-background-color: #ffe1d9;
+    -fx-text-fill: #2E1F27;
+}
+
+#readEntryDate {
+    -fx-text-fill: #395B50;
+    -fx-font-family: 'Centennial LT 45 Light';
+    -fx-font-size: 1.4em;
+}
+
+#readLabel {
+    -fx-font-family: 'Centennial LT 45 Light';
+    -fx-text-fill: #2E1F27;
+    -fx-padding: 0 10 5 10;
+}
+
+#tagCombo, #newTagField, #saveNewTagButton{
+    -fx-font-family: 'Univers-Light-Normal';
+}
+
+#tagCombo .list-cell {
+    -fx-background-color: #ffe1d9;
+    -fx-text-fill: #395b50;
+}
+
+#tagCombo .list-view .list-cell {
+    -fx-background-color: #395b50;
+    -fx-text-fill: #ffe1d9;
+}
+
+#tagCombo {
+    -fx-background-color: #ffe1d9;
+    -fx-border-width: 1;
+    -fx-border-color: #395b50;
+    -fx-background-radius: 0.3em;
+    -fx-border-radius: 0.3em;
+}
+
+#saveNewTagButton{
+    -fx-background-color: #395b50;
+    -fx-text-fill: #ffe1d9;
+    -fx-border-width: 1;
+    -fx-border-color: #ffe1d9;
+    -fx-background-radius: 0.3em;
+    -fx-border-radius: 0.3em;
+}
+
+#saveNewTagButton:hover {
+    -fx-background-color: #273f38;
+}
+
+#saveButton, #clearEntry, #cancelButton {
+    -fx-text-fill: #FFF9A5;
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-font-size: 1em;
+    -fx-background-radius:0.4em;
+    -fx-background-color: transparent;
+}
+
+#saveButton:hover, #clearEntry:hover, #cancelButton:hover {
+    -fx-background-color: #4c3441;
+}
+
+#deleteButton, #editButton{
+    -fx-background-color: #E5CAC3;
+    -fx-text-fill: #2e1f27;
+}
+
+#deleteButton:hover, #editButton:hover {
+    -fx-background-color: #CCB4AD;
+}
+
+#readScroll{
+    -fx-background-color: transparent;
+}
+
+TextArea .scroll-bar:vertical{
+    -fx-background-color: #A6C5BC;
+}
+
+TextArea .scroll-bar:vertical .thumb{
+    -fx-background-color: #395b50;
+}
+
+#leftScroll .scroll-pane, #rightScroll .scroll-pane{
+    -fx-background-color: #2e1f27;
+}
+#leftScroll .scroll-bar:vertical, #rightScroll .scroll-bar:vertical {
+    -fx-background-color: #FFF9A5;
+}
+
+#leftScroll .increment-button, .decrement-button, #rightScroll .increment-button, .decrement-button, #readScroll .increment-button, .decrement-button, TextArea .increment-button, .decrement-button{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#leftScroll .scroll-bar:vertical .track, #rightScroll .scroll-bar:vertical .track, #readScroll .scroll-bar:vertical .track, TextArea .scroll-bar:vertical .track   {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#leftScroll .scroll-bar:vertical .thumb, #rightScroll .scroll-bar:vertical .thumb{
+    -fx-background-color: #A6C5BC;
+}
+
+#readScroll .scroll-bar:vertical .thumb{
+    -fx-background-color: #FFF9A5;
+}
+
+#readScroll .scroll-bar:vertical{
+    -fx-background-color: #A6C5BC;
+}
+
+#tagButton{
+    -fx-wrap-text: true;
+    -fx-min-width: 220;
+}
+
+#dateLabel{
+    -fx-padding: 4 4 2 4;
+    -fx-font-family: 'Centennial LT 45 Light';
+}
+
+#textLabel{
+    -fx-padding: 0 10 0 10;
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-wrap-text: true;
+}
+
+#newTag{
+    -fx-text-alignment: center;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: #273f38;
+}
+
+#tagLabel{
+    -fx-font-family: 'Centennial LT 45 Light';
+    -fx-font-size: 1.7em;
+    -fx-padding: 5 5 5 5;
+}
+
+#deleteTagButton, #editTagButton, #downloadButton {
+    -fx-background-color: #273f38;
+    -fx-text-fill: #fff9a5;
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-padding: 13px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+#deleteTagButton:hover, #editTagButton:hover, #downloadButton:hover {
+    -fx-background-color: #395b50;
+}
+
+#readHeaderBox{
+    -fx-padding: 5 10 5 10;
+}
+
+#tagTextVBox{
+    -fx-background-color: #E5CAC3;
+}
+
+#leftBox{
+    -fx-background-color: #273f38;
+}
+
+#clearButton{
+    -fx-max-width: 240px;
+    -fx-background-color: #fff9a5;
+    -fx-font-family: 'Univers-Light-Normal';
+}
+
+#clearButton:hover{
+    -fx-background-color: #ccc784;
+}
+
+#editTTButton, #deleteTTButton{
+    -fx-background-color: #A6C5BC;
+    -fx-text-fill: #2e1f27;
+    -fx-font-family: 'Univers-Light-Normal';
+    -fx-padding: 9 13 9 13;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
