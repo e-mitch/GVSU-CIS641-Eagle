@@ -43,7 +43,7 @@
                 <Pane HBox.hgrow="ALWAYS"/>
                 <Label fx:id="entryDate"/>
             </HBox>
-            <VBox fx:id="tagTextVBox" minWidth="650" minHeight="550">
+            <VBox fx:id="tagTextVBox" minWidth="650" minHeight="650" maxHeight="650">
             </VBox>
 
             <VBox fx:id="writeArea">
