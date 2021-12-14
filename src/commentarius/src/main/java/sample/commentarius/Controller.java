@@ -86,6 +86,8 @@ public class Controller {
     VBox leftBox;
     @FXML
     Button newEntry;
+    @FXML
+    HBox tagDateHBox;
 
     private String highlightedText = "";
 
@@ -192,13 +194,16 @@ public class Controller {
         tagCBVisible = true;
         ArrayList<String> existingTags = processTags(getTags());
         existingTags.add(0, "New Tag");
-        tagComboBox.valueProperty().set(null);
+        tagComboBox = new ComboBox();
+        tagComboBox.setId("tagComboBox");
         tagComboBox.getItems().setAll(existingTags);
         tagComboBox.setPromptText("Select Tag");
+        tagDateHBox.getChildren().add(0, tagComboBox);
         tagComboBox.valueProperty().addListener(new ChangeListener() {
             @Override
             public void changed(ObservableValue observableValue, Object ov, Object nv) {
                 if (tagComboBox.getSelectionModel().getSelectedItem() != null) {
+                    System.out.println("hit changed");
                     if (tagComboBox.getSelectionModel().getSelectedItem().equals("New Tag")) {
                         newTagField.setVisible(true);
                         saveNewTagButton.setVisible(true);
@@ -618,7 +623,9 @@ public class Controller {
         sourceBox.getChildren().add(1, editArea);
         HBox saveCancelBox = new HBox();
         Button saveTTEditsButton = new Button("Save");
+        saveTTEditsButton.setId("saveTTEditsButton");
         Button cancelTTEditsButton = new Button("Cancel");
+        cancelTTEditsButton.setId("cancelTTEditsButton");
         saveCancelBox.getChildren().add(saveTTEditsButton);
         saveCancelBox.getChildren().add(cancelTTEditsButton);
         sourceBox.getChildren().add(2, saveCancelBox);
@@ -1053,13 +1060,6 @@ public class Controller {
         } else {
             updateData("entries", "entry", "date", getEntryPK(), entryContent);
         }
-        String pk = entryDate.replace(":", "");
-        pk = pk.replace("*", "");
-        pk = pk.replace("-", "");
-        pk = pk.replace(".", "");
-        pk = "e" + pk;
-        String[] entryColumns = {"text", "tag"};
-        createTable(pk, entryColumns);
     }
 
     public void setDate(){
@@ -1153,12 +1153,13 @@ public class Controller {
             newTagField.setText("");
             saveNewTagButton.setVisible(false);
             tagComboBox.setVisible(false);
-            //tagCombo.getSelectionModel().clearSelection();
+            tagComboBox.getSelectionModel().clearSelection();
             populateRight();
         }
     }
 
     private void tagText(String tag) {
+        System.out.println("hit tagText");
         String pk = "";
         saveEntry();
         pk = generatePK();
@@ -1177,6 +1178,9 @@ public class Controller {
         ArrayList<String> entries = getData("entries", "date");
         populateEntries(entries);
         editing = false;
+        if (tagComboBox != null){
+            tagComboBox.setVisible(false);
+        }
         cancelButton.setVisible(false);
         tagTextVBox.setVisible(false);
         tagTextVBox.setManaged(false);
