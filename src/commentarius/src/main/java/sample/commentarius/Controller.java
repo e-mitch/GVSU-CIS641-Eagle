@@ -192,13 +192,12 @@ public class Controller {
         tagCBVisible = true;
         ArrayList<String> existingTags = processTags(getTags());
         existingTags.add(0, "New Tag");
-        System.out.println(tagComboBox.getItems().size());
         tagComboBox.valueProperty().set(null);
         tagComboBox.getItems().setAll(existingTags);
         tagComboBox.setPromptText("Select Tag");
         tagComboBox.valueProperty().addListener(new ChangeListener() {
             @Override
-            public void changed(ObservableValue observableValue, Object o, Object t1) {
+            public void changed(ObservableValue observableValue, Object ov, Object nv) {
                 if (tagComboBox.getSelectionModel().getSelectedItem() != null) {
                     if (tagComboBox.getSelectionModel().getSelectedItem().equals("New Tag")) {
                         newTagField.setVisible(true);
@@ -499,7 +498,7 @@ public class Controller {
                 if (newName.isPresent()) {
                     ObservableList<Node> children = tagBox.getChildren();
                     int buttonIndex = 0;
-                    for(int a = 0; a < children.size(); a++){
+                    for(int a = 1; a < children.size()-1; a++){
                         Button currentChild = (Button) children.get(a);
                         String currentButtonText = currentChild.getText();
                         if(currentTag.strip().equals(currentButtonText.strip())){
