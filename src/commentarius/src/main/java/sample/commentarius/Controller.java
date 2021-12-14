@@ -41,6 +41,8 @@ import java.util.logging.Logger;
 
 public class Controller {
     @FXML
+    ScrollPane ttScroll;
+    @FXML
     Button saveButton;
     @FXML
     Label entryDate;
@@ -172,6 +174,8 @@ public class Controller {
         cancelButton.setVisible(false);
         tagTextVBox.setVisible(false);
         tagTextVBox.setManaged(false);
+        ttScroll.setVisible(false);
+        ttScroll.setManaged(false);
         ArrayList<String> allEntries = new ArrayList<String>();
         allEntries = getData("entries", "entry");
         if (allEntries.size() == 0){
@@ -430,6 +434,8 @@ public class Controller {
                         entryDate.setText("");
                         tagTextVBox.setVisible(false);
                         tagTextVBox.setManaged(false);
+                        ttScroll.setVisible(false);
+                        ttScroll.setManaged(false);
                         entryDate.setVisible(true);
                         writeArea.setVisible(false);
                         writeArea.setManaged(false);
@@ -450,6 +456,8 @@ public class Controller {
     }
 
     public void setUpTagText(Button tagButton){
+        ttScroll.setVisible(true);
+        ttScroll.setManaged(true);
         tagTextVBox.setVisible(true);
         tagTextVBox.setManaged(true);
         tagTextVBox.getChildren().setAll();
@@ -1184,6 +1192,8 @@ public class Controller {
         cancelButton.setVisible(false);
         tagTextVBox.setVisible(false);
         tagTextVBox.setManaged(false);
+        ttScroll.setVisible(false);
+        ttScroll.setManaged(false);
         entryDate.setVisible(false);
         writeArea.setVisible(true);
         readArea.setVisible(false);

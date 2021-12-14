@@ -293,3 +293,15 @@ TextArea .scroll-bar:vertical .thumb{
 #editTTButton:hover, #deleteTTButton:hover, #saveTTEditsButton:hover, #cancelTTEditsButton:hover {
     -fx-background-color: #95b1a9;
 }
+
+#ttScroll{
+    -fx-background-color: transparent;
+}
+
+#ttScroll .scroll-bar:vertical{
+    -fx-background-color: #A6C5BC;
+}
+
+#ttScroll .scroll-bar:vertical .thumb{
+    -fx-background-color: #395b50;
+}

@@ -43,9 +43,10 @@
                 <Pane HBox.hgrow="ALWAYS"/>
                 <Label fx:id="entryDate"/>
             </HBox>
-            <VBox fx:id="tagTextVBox" minWidth="650" minHeight="650" maxHeight="650">
-            </VBox>
-
+            <ScrollPane vbarPolicy="AS_NEEDED" hbarPolicy="NEVER" pannable="false" fx:id="ttScroll" minWidth="650" minHeight="650" maxHeight="650">
+                <VBox fx:id="tagTextVBox" minWidth="670" prefHeight="640">
+                </VBox>
+            </ScrollPane>
             <VBox fx:id="writeArea">
                 <TextArea fx:id="entryArea" minWidth="550" minHeight="550" onMouseClicked="#setDate" onDragDetected="#startDrag" onMouseDragReleased="#getHighlightedText" onMouseDragExited="#getHighlightedText" wrapText="true"/>
                 <Label id="Filler"/>
